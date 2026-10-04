@@ -14,12 +14,12 @@
  * }
  */
 class Solution {
-    static int min;
+    // static int min;
     public int minDepth(TreeNode root) {
         if(root==null)return 0;
-        min=1;
-        minimum(root);
-        return min;
+        // min=1;
+        return minimum(root);
+        // return min;
     }
      int minimum(TreeNode root){
 
@@ -31,7 +31,7 @@ class Solution {
         int leftlen=minimum(root.left);
         int rightlen=minimum(root.right);
 
-        min=1+Math.min(leftlen,rightlen);
+        // min=1+Math.min(leftlen,rightlen);
         
         return 1+Math.min(leftlen,rightlen);
     }
