@@ -6,7 +6,7 @@ class Solution {
            for(int j=0;j<matrix[0].length;j++){
             pq.add(matrix[i][j]);
         }
-        int n=matrix.length*matrix[0].length+1;
+       
         while(pq.size()>k) pq.remove();
 
         return pq.peek();
