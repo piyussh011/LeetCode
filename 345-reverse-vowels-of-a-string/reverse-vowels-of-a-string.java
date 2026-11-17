@@ -20,7 +20,11 @@ class Solution {
 
        return new String(a);
     }
-    public boolean isVowel(char c) {
-        return "AEIOUaeiou".indexOf(c) != -1;
-    }
+public static boolean isVowel(char ch){
+       if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+             ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+                 return true;
+             }
+          return false;
+     }
 }
